@@ -11,14 +11,14 @@ public class BasicRestController {
     private String name;
 
     @GetMapping("/")
-    public String sayHello(String username) {
+    public String sayHello() {
 //        return String.format("Hello %s!!", username != null ? username : "World");
         return "<h1>Does this really work ?? " + name + "!!</h1>";
     }
 
     @GetMapping("/fortune")
-    public String myFortune(String username) {
+    public String myFortune() {
 //        return String.format("Hello %s!!", username != null ? username : "World");
-        return "Your fortune is not so great momo " + name + "!!</h1>";
+        return "Your fortune is not so great " + name + "!!</h1>";
     }
 }
